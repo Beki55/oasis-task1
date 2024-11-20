@@ -1,0 +1,225 @@
+/* Reset and basic styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Header section styling */
+.header {
+  background-color: #f9f2e7;
+  padding: 60px 20px;
+  text-align: center;
+  height: 400px;
+}
+.header h1 {
+  font-size: 2.5em;
+  color: #1a1a1a;
+  margin-bottom: 30px;
+}
+.header p {
+  font-size: 1.2em;
+  color: #4d4d4d;
+}
+.header .p {
+  margin-top: 50px;
+}
+.header .btn {
+  margin-top: 50px;
+  padding: 15px 30px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #27ae60;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.header .btn:hover {
+  background-color: #219150; /* Slightly darker green */
+  transform: translateY(-3px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.header .btn:active {
+  background-color: #1c7a43; /* Even darker green for pressed state */
+  transform: translateY(0);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Feature section styling */
+.feature-container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+}
+.feature {
+  display: flex;
+  width: 75%;
+  align-items: center;
+  gap: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+.btn {
+  margin-top: 20px;
+}
+.feature:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.feature img {
+  width: 350px;
+  height: auto;
+  border-radius: 5px;
+  margin-right: 50px;
+}
+.feature-content h2 {
+  font-size: 1.5em;
+  color: #1a1a1a;
+}
+.feature-content p {
+  font-size: 1em;
+  color: #555;
+  margin: 10px 0;
+}
+.feature-content .btn {
+  margin-top: 40px;
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #27ae60;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* Features grid styling */
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 20px;
+  justify-content: space-around;
+}
+.feature-item {
+  max-width: 300px;
+  margin: 20px;
+  text-align: center;
+}
+.feature-item img {
+  max-width: 100%;
+  height: auto;
+}
+.feature-item h2 {
+  font-size: 1.5em;
+  margin: 20px 0 10px;
+}
+.feature-item p {
+  color: #666;
+}
+
+/* Benefits section styling */
+.benefits {
+  padding: 50px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+.benefit-items {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.benefit-item {
+  width: 25%;
+  padding: 40px;
+  margin: 20px;
+  background-color: #b0f1ed;
+  border-radius: 10px;
+  text-align: center;
+}
+.benefit-item h3 {
+  font-size: 1.3em;
+  margin-bottom: 10px;
+}
+
+/* Global Servers section styling */
+.global-servers {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #fde3e3;
+}
+.global-servers h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+.global-servers p {
+  font-size: 1em;
+  color: #777;
+}
+.server-info {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 30px;
+  font-size: 1.2em;
+  color: #333;
+}
+.footer-link {
+  margin-top: 20px;
+  color: #27ae60;
+  text-decoration: none;
+}
+.imgs {
+  width: 400px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .feature-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .feature img {
+    width: 100%;
+    height: auto;
+  }
+  .feature {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .features,
+  .benefit-items {
+    flex-direction: column;
+    align-items: center;
+  }
+  .benefit-item {
+    width: 80%;
+  }
+  .server-info {
+    gap: 10px;
+    font-size: 15px;
+  }
+  .global-servers h2 {
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
+}
